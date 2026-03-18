@@ -9,9 +9,11 @@
 <body>
     <h1>Switch Statement</h1>
 
-    <buttom class="btn btn-info" onclick = "teamRank()">Rank</buttom>
+    <button class="btn btn-info" onclick = "teamRank()">Rank</button>
 
     <script>
+        function teamRank(){
+
         var rank = "1st";
 
         var message = "";
@@ -31,6 +33,8 @@
                 break;
             default:
                 alert("Rank not available at this time.");
+            }
+            alert(message);
         }
 
         let team = "Yellow"; //string
